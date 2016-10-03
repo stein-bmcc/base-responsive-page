@@ -37,13 +37,15 @@ So, when this reset is applied the typography on the page won&rsquo;t look so gr
 
 This CSS file has a few simple rules that you can put in as part of the base CSS for a responsive site.
 
+#### Responsive Preparation
+
 The first set applies a boder-box box model to all elements on the site. This makes doing a responsive layout much easier because it allows you to set a width property and then adding padding or margin won't change the overall width of the element and force you to adjust the width property accordingly. Paul Irish gets full credit for this and you can learn more [by reading his article](http://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 
 The second allows images to resize responsively. If you put an image in a container element that is narrower than the image it will adjust its size to fit the container. If the container is bigger than the image, the image will NOT grow. *Note: this is not a fully responsive image where different images are sent to different screen sizes* 
 
 This CSS also affects the `<video>` element in the same way it works with the `<img>` element. This will not make embeded video (like from YouTube or Vimeo) responsive. See [this gist](https://gist.github.com/profstein/ff87675dd5e54c44185d) for that.
 
-#### Border-Box Explanation with Example
+*Border-Box Explanation with Example*
 
 For example you might make four .box elements appear next to each other by applying a rule like this:
 
@@ -69,10 +71,20 @@ If you are using the normal content-box model then you would have to go in and s
 With the border-box model, you just set the padding and you're done. And if you want to go and add borders later, no problem either.
 
 
-#### Embedded Video Styles
+*Embedded Video Styles*
 
 These can be used to help add embedded video content, like YouTube videos, to your page. These styles require you set up your HTML in a specific way. See this CodePen for an example of it in use: [http://codepen.io/profstein/pen/mArLRj](http://codepen.io/profstein/pen/mArLRj).
 
 
+#### Base Typographic Styles
 
+The styles in this section are meant to be changed. The styings are not what youw would want to use on a production site. For example all of the headings are the same size. The idea is that this shows you what you can style and it is up to you to determine how to style it. 
+
+At a minimum you should change the following:
+
+* **html selector**: font-family to the base font you want, line-height to something bigger, probably in the 1.3–1.8 range.
+* **p selector**: add in a bottom margin to separate paragraps. For example to add a blank line of 1em ````margin: 0 0 1em 0````
+* **h1,h2,h3,h4,h5,h6**: change font-family to the font you want for your headings. 
+* **All of the separate heading selectors**: Change the font-size and line-height (and margin, padding if needed) to set up a good typographic hierarchy. Alternatively you can replace this with a typographic scale from a site like: [http://type-scale.com/](http://type-scale.com/). You can also add in color here if you are using colors in your headings.
+* Add your own custom styles to the bottom of the page. This will include things like color, layout, navigation, button styles, link styles etc.
 
