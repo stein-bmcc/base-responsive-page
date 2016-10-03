@@ -15,6 +15,13 @@ This is a basic HTML5 file with a couple of additions.
 
 Speaking of navigation, that is not included here. There are a number of different solutions and which one you choose will depend on your navigation elements and choice based on the target audience, site type etc.
 
+
+### Test Page: test-page.html
+
+This is an example that adds content to the template from index.html to show how content might look when you first implement this page. Nothing has bee changed so the typography has not been properly styled and no other design choices (spacing, color etc.) have been made. It has all of the common (and some not so common) HTML5 Elements.
+
+<p>I tood the content from <a href="http://twitter.com/cbracco">@cbracco</a>. Code on <a href="http://github.com/cbracco/html5-test-page">GitHub</a>.</p>
+
 ## Base CSS
 
 These two files give a foundation to do all of your CSS including responsive styling.
